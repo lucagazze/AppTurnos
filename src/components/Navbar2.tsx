@@ -1,7 +1,7 @@
 "use client"
 
 
-import { Menu, X } from "lucide-react";
+import { Link, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -10,6 +10,9 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
+
+
+
 
   return (
     <nav className="sticky top-0 z-50 py-4 backdrop-blur-lg border-b border-gray-400">
@@ -20,22 +23,24 @@ const Navbar = () => {
           </div>
           <ul className="hidden lg:flex ml-16 space-x-10">
             <li>
-              <a href="#" className="text-lg hover:text-slate-300 transition-all">Sobre</a>
+              <a href="#sobre" className="text-lg hover:text-slate-300 transition-all">Sobre</a>
             </li>
             <li>
-              <a href="#" className="text-lg hover:text-slate-300 transition-all">Servicios</a>
+              <a href="#Servicios" className="text-lg hover:text-slate-300 transition-all">Servicios</a>
             </li>
             <li>
-              <a href="#" className="text-lg hover:text-slate-300 transition-all">Contacto</a>
+              <a href="#Contacto" className="text-lg hover:text-slate-300 transition-all">Contacto</a>
             </li>
           </ul>
           <div className="hidden lg:flex justify-center space-x-8 items-center">
           <a
-              href="#"
+              href="/reservation"
               className="text-black font-bold bg-gradient-to-r from-slate-200 to-slate-300 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-400 py-3 px-4 mx-3 rounded-md hover:shadow-black hover:shadow-2xl"
             >
+    
               Reserva un turno
             </a>
+            
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
@@ -58,7 +63,7 @@ const Navbar = () => {
             </ul>
             <div className="flex space-x-6">
             <a
-              href="#"
+              href="../app/reservation.tsx"
               className="text-black font-bold bg-gradient-to-r from-slate-200 to-slate-300 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-400 py-3 px-4 mx-3 rounded-md hover:shadow-black hover:shadow-2xl"
             >
               Reserva un turno

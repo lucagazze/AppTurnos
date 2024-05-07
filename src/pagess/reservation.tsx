@@ -1,20 +1,16 @@
-import Navbar from "../components/Navbar2";
+import Navbar2 from "../components/Navbar2";
 import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Servicios from "../components/Servicios";
-import Contacto from "../components/Contacto";
+import Contacto from "../components/Contacto"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-slate-500 to-slate-600 text-lg text-white">
-      <Navbar />
-      <Hero />
+      {/* Navbar y Hero ocupan toda la pantalla */}
       <div className="flex flex-col h-screen">
-        <Servicios />
-      </div>
-      <div className="flex flex-col h-screen">
+        <Navbar2 />
         <Contacto />
       </div>
+
       <Footer />
     </div>
   );
