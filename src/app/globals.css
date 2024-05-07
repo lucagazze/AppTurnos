@@ -21,7 +21,7 @@ body {
 
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* Track */
@@ -31,13 +31,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1fda25;
+  background: #6d6d6d;
   border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2ac231;
+  background: #aaaaaa;
 }
 
 
