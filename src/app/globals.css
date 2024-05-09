@@ -40,6 +40,10 @@ body {
   background: #aaaaaa;
 }
 
+*{
+  scroll-behavior: smooth 
+}
+
 
 
 

@@ -1,7 +1,8 @@
 "use client"
 
+import Link from "next/link";
 
-import { Link, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -12,6 +13,29 @@ const Navbar = () => {
   };
 
 
+  const dataNavbar = [
+  {
+    id: 1,
+    name: "Sobre mi",
+    link: "/sobre-mi",
+  },
+  {
+    id: 2,
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    id: 3,
+    name: "Cursos",
+    link: "/cursos",
+  },
+  {
+    id: 4,
+    name: "Recomendaciones",
+    link: "/recomendaciones",
+  },
+];
+
 
 
   return (
@@ -19,11 +43,20 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-base">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <span className="text-2xl font-bold">Barberia 313</span>
+          <a
+              href="#Sobre"
+              className="text-2xl font-bold"
+            >
+              
+    
+
+
+              Barberia 313
+            </a>
           </div>
-          <ul className="hidden lg:flex ml-16 space-x-10">
+          <ul className="hidden lg:flex ml-16 space-x-10 ">
             <li>
-              <a href="#sobre" className="text-lg hover:text-slate-300 transition-all">Sobre</a>
+              <a href="#Sobre" className="text-lg hover:text-slate-300 transition-all ">Sobre</a>
             </li>
             <li>
               <a href="#Servicios" className="text-lg hover:text-slate-300 transition-all">Servicios</a>
@@ -32,12 +65,15 @@ const Navbar = () => {
               <a href="#Contacto" className="text-lg hover:text-slate-300 transition-all">Contacto</a>
             </li>
           </ul>
-          <div className="hidden lg:flex justify-center space-x-8 items-center">
+          <div className="px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${router === item.link && 'bg-secondary'} ">
           <a
-              href="/reservation"
-              className="text-black font-bold bg-gradient-to-r from-slate-200 to-slate-300 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-400 py-3 px-4 mx-3 rounded-md hover:shadow-black hover:shadow-2xl"
+              href="/Turnos"
+              className="max-lg:hidden text-black font-bold bg-gradient-to-r from-slate-200 to-slate-300 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-400 py-3 px-4 mx-3 rounded-md hover:shadow-black hover:shadow-2xl"
             >
+              
     
+
+
               Reserva un turno
             </a>
             
@@ -62,8 +98,9 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="flex space-x-6">
+              
             <a
-              href="../app/reservation.tsx"
+              href="/Turnos"
               className="text-black font-bold bg-gradient-to-r from-slate-200 to-slate-300 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-400 py-3 px-4 mx-3 rounded-md hover:shadow-black hover:shadow-2xl"
             >
               Reserva un turno
