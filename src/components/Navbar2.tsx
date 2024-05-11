@@ -1,7 +1,5 @@
 "use client"
 
-import Link from "next/link";
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -11,30 +9,6 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
-
-
-  const dataNavbar = [
-  {
-    id: 1,
-    name: "Sobre mi",
-    link: "/sobre-mi",
-  },
-  {
-    id: 2,
-    name: "Blog",
-    link: "/blog",
-  },
-  {
-    id: 3,
-    name: "Cursos",
-    link: "/cursos",
-  },
-  {
-    id: 4,
-    name: "Recomendaciones",
-    link: "/recomendaciones",
-  },
-];
 
 
 
@@ -51,7 +25,7 @@ const Navbar = () => {
     
 
 
-              Barberia 313
+              Logo
             </a>
           </div>
           <ul className="hidden lg:flex ml-16 space-x-10 ">
@@ -60,6 +34,9 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#Servicios" className="text-lg hover:text-slate-300 transition-all">Servicios</a>
+            </li>
+            <li>
+              <a href="#Productos" className="text-lg hover:text-slate-300 transition-all">Productos</a>
             </li>
             <li>
               <a href="#Contacto" className="text-lg hover:text-slate-300 transition-all">Contacto</a>

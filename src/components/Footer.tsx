@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-gray-500 pb-8">
         {/* Logo */}
         <h1 className=" cursor-pointer hover:text-white text-xl font-bold ml-6">
-          Barberia 313
+          Logo
         </h1>
         {/* Social media */}
         <nav className="flex items-center gap-4">

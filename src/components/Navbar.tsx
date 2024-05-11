@@ -1,8 +1,6 @@
 "use client"
 
-import Link from "next/link";
 
-import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -51,7 +49,7 @@ const Navbar = () => {
     
 
 
-              Barberia 313
+              Logo
             </a>
           </div>
           <ul className="hidden lg:flex ml-16 space-x-10 ">
