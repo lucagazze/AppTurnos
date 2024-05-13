@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/TurnoSelect.jsx", "src/components/features/TimeSelector.jsx", "src/components/ui/calendar.jsx"],
   "exclude": ["node_modules"]
 }

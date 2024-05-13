@@ -42,7 +42,7 @@ const Navbar = () => {
               <a href="#Contacto" className="text-lg hover:text-slate-300 transition-all">Contacto</a>
             </li>
           </ul>
-          <div className="px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${router === item.link && 'bg-secondary'} ">
+          <div className="px-3 py-2 transition duration-150 rounded-full cursor-pointer  ">
           <a
               href="/Turnos"
               className="max-lg:hidden text-black font-bold bg-gradient-to-r from-slate-200 to-slate-300 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-400 py-3 px-4 mx-3 rounded-md hover:shadow-black hover:shadow-2xl"
